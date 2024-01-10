@@ -429,7 +429,7 @@ func (m *SamplingStrategyParameters) GetServiceName() string {
 }
 
 func init() {
-	proto.RegisterEnum("jaeger.api_v2.SamplingStrategyType", SamplingStrategyType_name, SamplingStrategyType_value)
+	//proto.RegisterEnum("jaeger.api_v2.SamplingStrategyType", SamplingStrategyType_name, SamplingStrategyType_value)
 	proto.RegisterType((*ProbabilisticSamplingStrategy)(nil), "jaeger.api_v2.ProbabilisticSamplingStrategy")
 	proto.RegisterType((*RateLimitingSamplingStrategy)(nil), "jaeger.api_v2.RateLimitingSamplingStrategy")
 	proto.RegisterType((*OperationSamplingStrategy)(nil), "jaeger.api_v2.OperationSamplingStrategy")
